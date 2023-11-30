@@ -210,4 +210,4 @@ sudo usermod -aG ftpuser ftpuser
 # Set default password for 'ftpuser'
 echo "ftpuser:$FTPUSER_PASSWORD" | sudo chpasswd
 
-echo "FTP service and user 'ftpuser' configured successfully with UFW."
+echo "FTP service and user 'ftpuser' configured successfully"
