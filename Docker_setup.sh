@@ -21,7 +21,9 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 sudo usermod -aG docker $USER
 newgrp docker
 
+# Restart Docker or if it's not enought 
 # Restart the system or log out and log back in to apply the group changes
+sudo service docker restart
 
 # Test Docker installation
 docker --version
