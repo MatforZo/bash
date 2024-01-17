@@ -28,6 +28,8 @@ docker --version
 docker run hello-world
 
 # Automatically start Docker and containerd on boot 
-
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+
+# Install the Compose plugin
+sudo apt-get install docker-compose-plugin
