@@ -37,7 +37,7 @@ sudo rm -rf latest.tar.gz wordpress
 
 # Configure Apache for WordPress
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/wordpress.conf
-sudo sed -i 's/\/var\/www\/html/\/var\/www\/html\/wordpress/g' /etc/apache2/sites-available/wordpress.conf
+sudo sed -i 's/\/var\/www\/html/\/var\/www\/html\/g' /etc/apache2/sites-available/wordpress.conf
 sudo a2ensite wordpress.conf
 sudo a2enmod rewrite
 sudo systemctl restart apache2
